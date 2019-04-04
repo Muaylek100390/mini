@@ -40,8 +40,6 @@ public class temp extends AppCompatActivity {
 
         temp = firebaseDatabase.getReference("temp");
 
-
-
         refer = firebaseDatabase.getReference();
         refer1 = firebaseDatabase.getReference();
 
@@ -89,9 +87,7 @@ public class temp extends AppCompatActivity {
                     showtemp.setText("COOL");
                     value0=1;
                 }
-
             }
-
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 
@@ -105,9 +101,6 @@ public class temp extends AppCompatActivity {
         });
 
 
-
-
-
         ImageView img3 = (ImageView)findViewById(R.id.img3);
         img3.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -115,10 +108,7 @@ public class temp extends AppCompatActivity {
                 Intent intent = new Intent(temp.this,second.class);
                 startActivity(intent);
                 finish();
-
-
             }
         });
     }
-
 }

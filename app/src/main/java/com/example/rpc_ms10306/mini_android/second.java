@@ -44,10 +44,6 @@ public class second extends AppCompatActivity {
 
         username.setText(getIntent().getStringExtra("Username"));
 
-
-
-
-
     }
 
 }

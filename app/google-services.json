@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "571762917041",
+    "firebase_url": "https://minipro-2c2cf.firebaseio.com",
+    "project_id": "minipro-2c2cf",
+    "storage_bucket": "minipro-2c2cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571762917041:android:1ebd55589abcc360",
+        "android_client_info": {
+          "package_name": "com.example.lenovo.mini"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571762917041-rehsl6htm7sj9fqjsbqoqjp62iuq2gaq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.lenovo.mini",
+            "certificate_hash": "49bf5812356b590bcfed5dafdb8215c2cb131a9b"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHMqjA0CN5AONaVvYXKV_yANep91pfwDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571762917041-rhqkvmv5meokmcur6orh1qe9u3g53kii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:571762917041:android:ce83981b5164cb4d",
+        "android_client_info": {
+          "package_name": "com.example.rpc_ms10306.mini_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "571762917041-aopf13qgfgp5n10vdfl8878alt5rfh3g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rpc_ms10306.mini_android",
+            "certificate_hash": "3a5062a1b281d871883c470bbd89c6d59e422a58"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHMqjA0CN5AONaVvYXKV_yANep91pfwDM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "571762917041-rhqkvmv5meokmcur6orh1qe9u3g53kii.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

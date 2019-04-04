@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.rpc_ms10306.mini_android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".index">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".two"
+            android:label="@string/title_activity_two"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".two1"
+            android:label="@string/title_activity_two1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".second"
+            android:label="@string/title_activity_second"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".temp"
+            android:label="@string/title_activity_temp"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".dis"
+            android:label="@string/title_activity_dis"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">mini_android</string>
+    <string name="title_activity_two">two</string>
+    <string name="title_activity_two1">two1</string>
+    <string name="title_activity_second">second</string>
+    <string name="title_activity_temp">temp</string>
+    <string name="title_activity_dis">dis</string>
+</resources>

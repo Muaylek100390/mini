@@ -1,0 +1,6 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="txtsize">35sp</dimen>
+    <dimen name="txtsize1">28sp</dimen>
+    <dimen name="txtsize2">25sp</dimen>
+</resources>

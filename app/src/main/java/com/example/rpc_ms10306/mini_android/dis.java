@@ -22,12 +22,13 @@ import java.util.Map;
 public class dis extends AppCompatActivity {
 
     ImageView img4;
+
     public FirebaseDatabase firebaseDatabase;
-    public DatabaseReference dis,refer,refer1;
+    public DatabaseReference dis,showdis,refer,refer1;
     public static final String TAG = "DISTANCE";
-    public TextView disT,showdis;
-    public Integer value1,value0;
-    public String data;
+    public String Data;
+    public Integer Value1,Value2;
+    public TextView disT,showdis1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,21 +37,21 @@ public class dis extends AppCompatActivity {
 
         firebaseDatabase = FirebaseDatabase.getInstance();
 
-        dis = firebaseDatabase.getReference("Distance");
-
+        dis = firebaseDatabase.getReference("Duration");
+        showdis = firebaseDatabase.getReference("Txtdis");
 
         refer = firebaseDatabase.getReference();
         refer1 = firebaseDatabase.getReference();
 
         disT = (TextView)findViewById(R.id.txt6);
-        showdis = (TextView)findViewById(R.id.txt);
+        showdis1 = (TextView)findViewById(R.id.txt);
 
         refer.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Map map = (Map)dataSnapshot.getValue();
-                data = String.valueOf(map.get("Duration"));
-                showdis.setText(data);
+                Data = String.valueOf(map.get("Txtdis"));
+                showdis1.setText(Data);
             }
 
             @Override
@@ -63,8 +64,8 @@ public class dis extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Map map = (Map)dataSnapshot.getValue();
-                data = String.valueOf(map.get("Distance"));
-                disT.setText(data);
+                Data = String.valueOf(map.get("Duration"));
+                disT.setText(Data);
             }
 
             @Override
@@ -73,20 +74,19 @@ public class dis extends AppCompatActivity {
             }
         });
 
-        showdis = (TextView)findViewById(R.id.txt4);
+        showdis1 = (TextView)findViewById(R.id.txt);
         dis.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                value1 = dataSnapshot.getValue(Integer.class);
-                if(value1==1){
-                    showdis.setText("SAFE");
-                    value0=0;
+                Value1 = dataSnapshot.getValue(Integer.class);
+                if(Value1==1){
+                    showdis1.setText("DANGER");
+                    Value2=0;
                 }
                 else {
-                    showdis.setText("DANGER");
-                    value0=1;
+                    showdis1.setText("SAFE");
+                    Value2=1;
                 }
-
             }
 
             @Override
@@ -94,10 +94,11 @@ public class dis extends AppCompatActivity {
 
             }
         });
-        showdis.setOnClickListener(new View.OnClickListener() {
+
+        showdis1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dis.setValue(value0);
+                dis.setValue(Value2);
             }
         });
 
